@@ -24,6 +24,7 @@ WORKDIR /nagios_home/nagios-4.4.6/
 
 # Create Nagios User 
 RUN useradd -m nagios
+RUN useradd -m sam 
 #
 # Compile
 RUN ./configure --with-command-group=nagios
